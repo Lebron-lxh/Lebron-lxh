@@ -1,0 +1,10 @@
+本地创建一个git：git init 初始化本地仓库
+git status  用于查看当前仓库的状态，红色显示还未添加进仓库
+git add img/  用于添加单个未添加的文件
+git add index.html index.css index.js（file1..）
+git add （空格）.  给当前目录全部添加
+git commit  -m 'init me'用于提交 字符串的额内容用于对提交的进行说明
+git log  查看当前仓库的提交记录 commit：编号 Author：作者 Date：提交事件
+pleease tell mo who you are:需要根据下面的run提示输入账号密码
+
+
