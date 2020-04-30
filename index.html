@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <img src="img/top.jpg" alt="">
+    <header>
+        欢迎您申请免费QQ号码，申请过程将不会收取您任何费用。我们承诺保护您的信息安全，不会将它提供给任何第三方。<br>
+        注：<i style="color: red;">*</i>为必填内容
+    </header>
+    <article>
+        
+        <aside>您的账户信息</aside>
+            <span>昵称：</span><input type="text" onblur="idNode(this)"><a class="attention"></a>
+            <i></i><p id="idPromet">英文字母，数字或者下划线，长度为4-16个字符</p><i></i>
+            <span>密码：</span><input type="text" onblur="passwrod(this)" id="passwrod"><a class="attention"></a>
+            <i></i><p>6-16个字符组成字母或数字组成</p><i></i>
+            <span>重新输入密码：</span><input type="text" onblur="repeatNode(this,'passwrod')"><a class="attention"></a>  
+        <aside>您的个人信息</aside>
+            <span>出生日期：</span><input type="text" onblur="birth(this)"><a class="attention">日期格式yyyy-mm-dd</a>
+            <span>性别：</span><div><input type="radio" name="sex" id="man" checked>男<input type="radio" name="sex" id="women">女</div><a class="attention" style="color: black;"></a>
+            <span>电子邮件地址：</span><input type="text" onblur="email (this)"><a class="attention"></a>
+        <aside>所在地区</aside>
+            <span>省份：</span><select name="" id="province" onblur="provinces(this)"><option value="">请输入省份</option></select><a class="attention"></a>
+            <span>城市：</span><select name="" id="city" onblur="cities(this)"><option value="">请输入城市</option></select><a class="attention"></a>
+        <aside>相关服务条款</aside>
+        <form action="https://www.baidu.com/">
+           <input type="submit" value="提交注册" id="sub" onchange="sub(this)"></form>
+       
+    </article>
+</body>
+<script src="js/index.js"></script>
+</html>
